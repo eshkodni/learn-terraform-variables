@@ -32,5 +32,5 @@ resource "aws_instance" "app" {
 module "s3-bucket" {
   source  = "app.terraform.io/policy-as-code-training/elina-s3-bucket1/aws"
   version = "1.0.0"
-  bucket_name = "elina-bucket"
+  bucket_name = "elina-bucket-20251120"
 }

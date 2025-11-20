@@ -28,3 +28,9 @@ resource "aws_instance" "app" {
 
   tags = var.tags
 }
+
+module "elina-s3-bucket1" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-es/aws"
+  version = "1.3.0"
+  bucket_name = "elina-bucket"
+}
